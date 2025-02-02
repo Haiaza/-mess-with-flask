@@ -1,18 +1,32 @@
+.container {
+  margin: 0 auto;
+}
+
 body {
   background: #EDF2F4;
+  text-align: center;
 }
 
 p {
-  font: Roboto;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #2B2D42;
+  font-weight: bold;
 }
 h1 {
   color: #8D99AE;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h2 {
   color: #EF233C;
+}
 
 .hmm {
-  color: #D90429;
+  color: #cfbaf0;
+}
+
+img {
+  width: 55%;
+  height: 320px;
 }
