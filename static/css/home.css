@@ -12,6 +12,15 @@ p {
   color: #2B2D42;
   font-weight: bold;
 }
+.TODO {
+  color:orange
+}
+
+.footer {
+  font-size: 13px;
+  font-weight: bold;
+}
+
 h1 {
   color: #8D99AE;
   font-size: 50px;
