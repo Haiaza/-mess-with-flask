@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <title>My first Flask Template</title>
 </head>
 <body>
   <div class="container">
-    <h1>My First Flask Page</h1>
-    <p>Well technically this is my 4th draft since i forgot to save the first few.</p>
-    <h2>But the practice is nice!</h2>
+    <h1 class="text-center">My First Flask Page</h1>
+    <p class="text-center">Well technically this is my 4th draft since i forgot to save the first few.</p>
+    <h2 class="text-center">But the practice is nice!</h2>
   
-    <h2 class="hmm">i wonder if i will use flask alot in the future</h2>
-    <img src="https://i.imgur.com/RluT0RK.jpeg">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nostrum mollitia aliquam ut voluptatibus ad dolor, fugit id maiores officia modi, labore earum saepe numquam iusto praesentium consectetur dignissimos nemo.</p> 
-    <p class="TODO">TODO : Mess with Data</p>
-    <p class="TODO">TODO : add Bootstrap</p>
-  
-    <p class="footer">Made by Azaiah 2025</p>
-
+    <h2 class="hmm text-center">i wonder if i will use flask alot in the future</h2>
+    <img src="https://i.imgur.com/RluT0RK.jpeg" class="rounded mx-auto d-block">
+    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nostrum mollitia aliquam ut voluptatibus ad dolor, fugit id maiores officia modi, labore earum saepe numquam iusto praesentium consectetur dignissimos nemo.</p> 
+    <p class="TODO text-center">TODO : Mess with Data</p>
+    <p class="DONE text-center">TODO : add Bootstrap</p>
+    
+    <div class="text-center">
+      <button class="btn btn-outline-primary btn-lg">Contact me</button>
+    </div>
+    <p class="footer text-center pt-3">Made by Azaiah 2025</p>
+    
   </div>
 </body>
 </html>
