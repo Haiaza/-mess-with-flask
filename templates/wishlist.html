@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wishlist</title>
 </head>
 <body>
-    Basic bitch
+    <h1>Things i'd like to have</h1>
+    <!-- This first version will be with coded in data -->
+    <p>
+        {% for wish in wishlist %}
+            <div class="">
+                <h3>{{ wish['wish'] }}</h3>
+                <p>{{ wish['desc'] }}</p>
+                {% if wish['salary'] %}
+                <p>{{ wish['salary'] }} would be very nice.</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </p>
 </body>
 </html>
