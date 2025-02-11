@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/wishlist`.css') }}">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Wishlist</title>
 </head>
 <body>
-    <h1>Things i'd like to have</h1>
+    <div class="container text-center">
+        <h1>Things i'd like to have</h1>
     <!-- This first version will be with coded in data -->
-    <p>
+    <p class="row">
         {% for wish in wishlist %}
-            <div class="">
+            <div class=" border-bottom col-9">
                 <h3>{{ wish['wish'] }}</h3>
                 <p>{{ wish['desc'] }}</p>
                 {% if wish['salary'] %}
                 <p>{{ wish['salary'] }} would be very nice.</p>
                 {% endif %}
             </div>
+            <button class="btn btn-info col-3">Fingers Crossed</button>
         {% endfor %}
     </p>
+    </div>
 </body>
 </html>
